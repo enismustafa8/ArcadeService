@@ -4,6 +4,6 @@ namespace ArcadeService.BL.Interfaces
 {
     public interface ISellArcadeMachine
     {
-        SellCarResult Sell(Guid arcadeMachineId, Guid customerId);
+        SellArcadeMachineResult Sell(Guid arcadeMachineId, Guid customerId);
     }
 }

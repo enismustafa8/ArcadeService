@@ -18,7 +18,7 @@ namespace ArcadeService.BL.Services
             _customerRepository = customerRepository;
         }
 
-        public SellCarResult Sell(Guid arcadeMachineId, Guid customerId)
+        public SellArcadeMachineResult Sell(Guid arcadeMachineId, Guid customerId)
         {
             var arcadeMachine = _arcadeMachineCrudService.GetById(arcadeMachineId);
             var customer = _customerRepository.GetById(customerId);
@@ -31,7 +31,7 @@ namespace ArcadeService.BL.Services
 
             var price = arcadeMachine.BasePrice - customer.Discount;
 
-            return new SellCarResult
+            return new SellArcadeMachineResult
             {
                 Price = price,
                 ArcadeMachine = arcadeMachine,

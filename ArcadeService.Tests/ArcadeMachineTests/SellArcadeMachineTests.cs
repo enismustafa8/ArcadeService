@@ -8,7 +8,7 @@ using Xunit;
 
 namespace ArcadeService.Tests.CarTests
 {
-    public class SellCarTests
+    public class SellArcadeMachineTests
     {
         private Mock<IArcadeMachineCrudService> _arcadeMachineCrudServiceMock;
         private Mock<ICustomerRepository> _customerRepositoryMock;

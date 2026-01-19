@@ -2,7 +2,7 @@
 
 namespace ArcadeService.Models.Responses
 {
-    public class SellCarResult
+    public class SellArcadeMachineResult
     {
         public ArcadeMachine ArcadeMachine { get; set; }
 
